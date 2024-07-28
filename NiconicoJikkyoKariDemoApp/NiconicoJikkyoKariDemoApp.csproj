@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <Protobuf Include="protobuf\proto\**\*.proto" ProtoRoot="protobuf\proto\" GrpcServices="None" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.27.2" />
+    <PackageReference Include="Grpc.Tools" Version="2.65.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
