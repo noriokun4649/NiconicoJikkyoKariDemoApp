@@ -23,7 +23,7 @@
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ソース" DisplayMemberBinding="{Binding ChannelName}"/>
-                    <GridViewColumn Header="時刻"  DisplayMemberBinding="{Binding Time}"/>
+                    <GridViewColumn Header="時刻"  DisplayMemberBinding="{Binding Time,StringFormat=HH:mm:ss}"/>
                     <GridViewColumn Header="コメント" DisplayMemberBinding="{Binding Comment}"/>
                     <GridViewColumn Header="ユーザー"  DisplayMemberBinding="{Binding UserId}"/>
                     <GridViewColumn Header="Vpos" DisplayMemberBinding="{Binding Vpos}"/>

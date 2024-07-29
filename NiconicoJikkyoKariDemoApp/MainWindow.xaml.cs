@@ -38,13 +38,16 @@ namespace NiconicoJikkyoKariDemoApp
                 {
                     if (msg.Message != null)
                     {
-                        comments.Add(new(){
+                        var comment = new CommentItem()
+                        {
                             ChannelName = channel,
                             Comment =  msg.Message.Chat.Content,
                             UserId = msg.Message.Chat.HashedUserId,
                             Time = DateTime.Now,
                             Vpos = msg.Message.Chat.Vpos
-                        });
+                        };
+                        comments.Add(comment);
+                        CommentListView.ScrollIntoView(comment);
                     }
                 };
                 await chatService.Connect();

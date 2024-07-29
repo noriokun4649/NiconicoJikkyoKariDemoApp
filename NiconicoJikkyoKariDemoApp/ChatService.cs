@@ -19,7 +19,8 @@ namespace NiconicoJikkyoKariDemoApp
             { "テレビ東京", "kl17" },
             { "フジテレビ", "kl18" },
             { "TOKYO MX", "kl19" },
-            { "BS11", "kl20" }
+            { "BS11", "kl20" },
+            { "サイバー攻撃からのニコニコ復旧を見守る場所", "kl1" },
         };
         private const string chatApiBaseUrl = "https://mpn.live.nicovideo.jp/m1/api/v1/chat";
 
